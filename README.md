@@ -1,2 +1,2 @@
 # SpaceShoot
-Game fully writtern in JavaScript for educational purposes
+Game fully written in JavaScript for educational purposes
