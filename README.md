@@ -15,4 +15,5 @@ The game has no additional bonuses, buffs, or extra enemies. It doesn't feature 
 
 ## Course tutorial and original code
 Tutorial and code by [Chris Courses](https://www.youtube.com/watch?v=MCVU0w73uKI&t)
+
 Recreated and tweaked by me
