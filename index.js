@@ -472,8 +472,8 @@ addEventListener('keydown', ({ key }) => {
             console.log ('right')
             keys.d.pressed = true
             break
-        case 'z': //shoot rockets
-            console.log ('z')
+        case ' ': //shoot rockets space
+            console.log (' ')
             projectiles.push(
                 new Projectile({
                     position: {
@@ -501,8 +501,8 @@ addEventListener('keyup', ({ key }) => {
             console.log ('right')
             keys.d.pressed = false
             break
-        case 'z': //shoot rockets
-            console.log ('z')
+        case ' ': //shoot rockets space
+            console.log (' ')
             keys.z.pressed = false
             break
     }
