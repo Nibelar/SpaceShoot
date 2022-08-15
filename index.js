@@ -507,3 +507,11 @@ addEventListener('keyup', ({ key }) => {
             break
     }
 })
+
+//SHOOT SOUND EFFECT WHEN PRESSING SPACE BUTTON
+    document.addEventListener('keydown', function(e) {
+        if(e.keyCode == 32){
+        document.getElementById('audio').play();
+    }
+      audio.volume = 0.08; //shoot volume
+    });
