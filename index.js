@@ -5,7 +5,7 @@ const c = canvas.getContext('2d')
 canvas.width = 1280
 canvas.height = 720
 
-var backmusic = new Audio('sound/loop.wav');
+var backmusic = new Audio('sound/loop.mp3');
 backmusic.volume = 0.5;
 backmusic.play();
 
@@ -522,7 +522,6 @@ addEventListener('keyup', ({ key }) => {
 
             //SHOOT SOUND EFFECT WHEN PRESSING SPACE BUTTON
             var playersound = document.getElementById('shoot').play();
-
             break
     }
 })
