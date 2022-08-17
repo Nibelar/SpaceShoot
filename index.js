@@ -4,6 +4,11 @@ const c = canvas.getContext('2d')
 
 canvas.width = 1280
 canvas.height = 720
+
+var backmusic = new Audio('sound/loop.wav');
+backmusic.volume = 0.5;
+backmusic.play();
+
 class Player {
     constructor () {
         this.velocity = {
@@ -27,7 +32,6 @@ class Player {
         }
     }
     
-
     draw () {
         //c.fillStyle = 'red' //debug lines only
         //c.fillRect (this.position.x, this.position.y, this.width, this.height)
@@ -337,13 +341,17 @@ function animate() {
         if (invaderProjectile.position.y + invaderProjectile.height >= 
             player.position.y && invaderProjectile.position.x + invaderProjectile.width >= 
             player.position.x && invaderProjectile.position.x <= player.position.x + player.width) {
-            
-            console.log('your ship is destroyed')
 
+            console.log('your ship is destroyed')
+                
             setTimeout(() => {
                 invaderProjectiles.splice(index, 1)
                 player.opacity = 0
                 game.over = true
+
+                //play death-sound when hit by projectile
+                document.getElementById('p-death').play();
+                audio.volume = 0.2; //volume
             }, 0)
 
             setTimeout(() => {
@@ -373,6 +381,9 @@ function animate() {
             //spawn projectiles for Invaders
     if (frames % 100 === 0 && grid.invaders.length > 0) {
         grid.invaders[Math.floor(Math.random() * grid.invaders.length)].shoot(invaderProjectiles)
+        //play sound when invader shoot projectile
+        document.getElementById('e-shoot').play();
+ 
     }
 
 
@@ -415,6 +426,10 @@ function animate() {
                         grid.invaders.splice(i, 1)
                         projectiles.splice(j, 1)
 
+                        //play death-sound for invaders when hit
+                        document.getElementById('e-death').play();
+                        audio.volume = 0.2; //volume
+                        
                         if (grid.invaders.length > 0) {
                             const firstInvader = grid.invaders[0]
                             const lastInvader = grid.invaders [grid.invaders.length - 1]
@@ -504,14 +519,10 @@ addEventListener('keyup', ({ key }) => {
         case ' ': //shoot rockets space
             console.log (' ')
             keys.z.pressed = false
+
+            //SHOOT SOUND EFFECT WHEN PRESSING SPACE BUTTON
+            var playersound = document.getElementById('shoot').play();
+
             break
     }
 })
-
-//SHOOT SOUND EFFECT WHEN PRESSING SPACE BUTTON
-    document.addEventListener('keydown', function(e) {
-        if(e.keyCode == 32){
-        document.getElementById('audio').play();
-    }
-      audio.volume = 0.08; //shoot volume
-    });
