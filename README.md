@@ -1,5 +1,6 @@
 # SpaceShoot
 A space Shooter game made in JavaScript which runs in any modern browser. **Doesn't support mobile controls**
+[Live Demo is available here](https://spaceshoot.pages.dev/)
 
 ## How to play this game?
 This is just a basic game where you shoot and kill space invaders for score with your weaponry. You have only one life, but (**WIP**) you can find several upgrades/buffs to upgrade your ship and survive
@@ -11,7 +12,9 @@ D - Move right
 Space - Shoot rockets
 
 ## Bugs and features
-The game has no additional bonuses, buffs, or extra enemies. It doesn't feature any music or sound effect at all.
+The game has no additional bonuses, buffs, or extra enemies. The game has fully implemented sound effects for player and enemies.
+
+*To play background music, You need to change browser's permissions to allow audio access.*
 
 Most sound effects are extracted from [FreeSound](https://freesound.org/)
 
