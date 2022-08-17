@@ -20,7 +20,13 @@
 </p>
     <canvas></canvas>
     <audio id="audio" controls style="display:none">
-        <source src="sound/shoot.wav" type="audio/wav">
+        <source src="sound/player-shoot.wav" type="audio/wav">
     </audio>
 </div>
+<script type="text/javascript">
+    if (screen.width <= 700) {
+    window.location = "https://spaceshoot.pages.dev/sorry.html";
+}
+</script>
 <script src="./index.js"></script>
+
