@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SpaceShoot
 A space Shooter game made in JavaScript which runs in any modern browser. **Doesn't support mobile controls**
 
