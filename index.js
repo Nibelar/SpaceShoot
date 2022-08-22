@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const scoreEl = document.querySelector('#scoreEl')
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
@@ -32,6 +33,7 @@ class Player {
         }
     }
     
+
     draw () {
         //c.fillStyle = 'red' //debug lines only
         //c.fillRect (this.position.x, this.position.y, this.width, this.height)
@@ -524,4 +526,5 @@ addEventListener('keyup', ({ key }) => {
             var playersound = document.getElementById('shoot').play();
             break
     }
+>>>>>>> 9c4f03cb2690e54259a65f1ac03c8b0578169bd8
 })
