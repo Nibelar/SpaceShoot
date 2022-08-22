@@ -13,6 +13,8 @@ Space - Shoot rockets
 ## Bugs and features
 The game has no additional bonuses, buffs, or extra enemies. It doesn't feature any music or sound effect at all.
 
+Most sound effects are extracted from [FreeSound](https://freesound.org/)
+
 You can hold **'Shoot key'** to spam/abuse rockets to easily destroy everyone on screen.
 
 ## Course tutorial and original code
