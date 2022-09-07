@@ -20,6 +20,8 @@ Most sound effects are extracted from [FreeSound](https://freesound.org/)
 
 You can hold **'Shoot key'** to spam/abuse rockets to easily destroy everyone on screen.
 
+If your refresh rate is above 60hz (60+FPS) then this game is going to be way faster than intended
+
 ## Course tutorial and original code
 Tutorial and code by [Chris Courses](https://www.youtube.com/watch?v=MCVU0w73uKI&t)
 
