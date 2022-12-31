@@ -365,8 +365,23 @@ function animate() {
                 fades: true
             })
         }
+        //show restart button on death
+        if (game.over) {
+            showButton();
+        }
     })
 
+    //show restart button on death
+    function showButton() {
+        // Get the button element
+        var button = document.getElementById("restart-button");
+        button.addEventListener("click", function() {
+            location.reload();
+        });
+        // Set the display style of the button to "block"
+        button.style.display = "block";
+    }
+    
     projectiles.forEach ((projectile, index) => {
         if (projectile.position.y + projectile.radius <= 0) {
             setTimeout(() => {

@@ -9,7 +9,25 @@
     }
 </style>
 
+<!-- Restart button if player dies -->
+<button id="restart-button" style="display: none;">Restart</button>
+<style>
+    #restart-button {
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        z-index: 999;
+        font-size: 40px;
+        padding: 15px;
+        background-color: #c2d800;
+        border-radius: 5px;
+        border-color: green;
+    }
+</style>
 
+
+<!-- game controls information -->
 <div style="position: relative;">
     <p
     style="position: absolute; z-index: 10; color: white; 
@@ -21,6 +39,7 @@
 </p>
     <canvas></canvas>
 
+    <!-- sound effects -->
     <audio id="shoot" controls style="display:none">
         <source src="sound/player-shoot.wav" type="audio/wav">
     </audio>
@@ -41,6 +60,7 @@
         <source src="sound/loop.mp3" type="audio/mp3">
     </audio>
 </div>
+<!-- redirect to other page if detected mobile browser -->
 <script type="text/javascript">
     if (screen.width <= 700) {
     window.location = "https://spaceshoot.pages.dev/sorry.html";
