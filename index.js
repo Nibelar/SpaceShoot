@@ -519,7 +519,7 @@ addEventListener('keydown', ({ key }) => {
             )
             keys.z.pressed = true
             break
-    }
+        }
 })
 
 addEventListener('keyup', ({ key }) => {
@@ -535,7 +535,7 @@ addEventListener('keyup', ({ key }) => {
         case ' ': //shoot rockets space
             console.log (' ')
             keys.z.pressed = false
-
+            
             //SHOOT SOUND EFFECT WHEN PRESSING SPACE BUTTON
             var playersound = document.getElementById('shoot').play();
             break
